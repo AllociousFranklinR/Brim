@@ -240,7 +240,7 @@ export default function App() {
     // Theme Color for Mobile Browsers
     const themeColor = document.querySelector('meta[name="theme-color"]') || document.createElement('meta');
     themeColor.setAttribute('name', 'theme-color');
-    themeColor.setAttribute('content', '#000100');
+    themeColor.setAttribute('content', '#E3F2FD');
     if (!document.querySelector('meta[name="theme-color"]')) {
       document.head.appendChild(themeColor);
     }
@@ -282,7 +282,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#000100]">
+    <div className="min-h-screen bg-[#E3F2FD]">
       <Header currentPage={currentPage} onNavigate={setCurrentPage} />
       
       {currentPage === 'home' ? (

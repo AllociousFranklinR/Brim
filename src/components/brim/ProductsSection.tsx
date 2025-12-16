@@ -70,7 +70,7 @@ function ProductImageSlideshow({
   }, [images.length]);
 
   return (
-    <div className="relative h-64 overflow-hidden bg-[#000100]">
+    <div className="relative h-64 overflow-hidden bg-gray-100">
       {images.map((image, index) => (
         <motion.img
           key={index}
@@ -106,8 +106,8 @@ function ProductImageSlideshow({
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all ${
               currentIndex === index
-                ? "bg-[#B6B6B4] w-6"
-                : "bg-[#B6B6B4]/40"
+                ? "bg-[#2196F3] w-6"
+                : "bg-gray-400"
             }`}
             aria-label={`Go to image ${index + 1}`}
           />
@@ -130,7 +130,7 @@ export function ProductsSection() {
   return (
     <section
       id="products"
-      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-[#000100]"
+      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -140,10 +140,10 @@ export function ProductsSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#B6B6B4] mb-3 sm:mb-4 px-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1E3A8A] mb-3 sm:mb-4 px-2">
             Our Premium Products
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-[#8A8A8A] px-2">
+          <p className="text-base sm:text-lg md:text-xl text-[#546E7A] px-2">
             Enterprise-grade LED clocks for every need
           </p>
         </motion.div>
@@ -162,7 +162,7 @@ export function ProductsSection() {
                   delay: index * 0.2,
                   duration: 0.8,
                 }}
-                className={`bg-[#292929] rounded-lg overflow-hidden border border-[#B6B6B4]/20 hover:border-[#B6B6B4]/40 transition-all duration-300 hover:shadow-xl hover:shadow-[#B6B6B4]/10 flex flex-col ${
+                className={`bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-[#2196F3] transition-all duration-300 hover:shadow-xl flex flex-col ${
                   product.scale === "large"
                     ? "lg:scale-105"
                     : ""
@@ -174,14 +174,14 @@ export function ProductsSection() {
                     images={product.images}
                   />
                   {/* Icon Badge */}
-                  <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-[#B6B6B4] p-2 sm:p-3 rounded-full z-10">
-                    <Icon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#000100]" />
+                  <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-[#2196F3] p-2 sm:p-3 rounded-full z-10">
+                    <Icon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
                   </div>
                 </div>
 
                 {/* Product Info */}
                 <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
-                  <h3 className="text-xl sm:text-2xl text-[#F5F5F5] mb-3 sm:mb-4">
+                  <h3 className="text-xl sm:text-2xl text-[#1E3A8A] mb-3 sm:mb-4">
                     {product.name}
                   </h3>
 
@@ -189,9 +189,9 @@ export function ProductsSection() {
                     {product.features.map((feature, idx) => (
                       <li
                         key={idx}
-                        className="flex items-start gap-2 text-sm sm:text-base text-[#8A8A8A]"
+                        className="flex items-start gap-2 text-sm sm:text-base text-[#546E7A]"
                       >
-                        <span className="text-[#B6B6B4] mt-1">
+                        <span className="text-[#2196F3] mt-1">
                           •
                         </span>
                         <span>{feature}</span>
@@ -199,15 +199,15 @@ export function ProductsSection() {
                     ))}
                   </ul>
 
-                  <div className="bg-[#000100]/50 rounded p-3 mb-4">
-                    <p className="text-[#B6B6B4] text-xs sm:text-sm">
+                  <div className="bg-[#E3F2FD] rounded p-3 mb-4">
+                    <p className="text-[#546E7A] text-xs sm:text-sm">
                       {product.size}
                     </p>
                   </div>
 
                   <button
                     onClick={() => handleEnquire(product.name)}
-                    className="w-full px-4 sm:px-6 py-2.5 sm:py-3 bg-[#B6B6B4] text-[#000100] rounded-lg hover:bg-[#F5F5F5] transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+                    className="w-full px-4 sm:px-6 py-2.5 sm:py-3 bg-[#2196F3] text-white rounded-lg hover:bg-[#1976D2] transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
                     aria-label={`Enquire about ${product.name}`}
                   >
                     <svg

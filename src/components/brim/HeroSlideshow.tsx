@@ -41,7 +41,7 @@ export function HeroSlideshow() {
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#000100]/50 to-[#000100] z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-[#E3F2FD] z-10" />
           <img
             src={products[currentSlide].image}
             alt={`${products[currentSlide].name} - Premium LED Digital Clock by Brim Clocks`}
@@ -63,7 +63,7 @@ export function HeroSlideshow() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
-                className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#B6B6B4]"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-white"
               >
                 Trusted by Banks, Offices & Corporations
                 Nationwide
@@ -81,8 +81,8 @@ export function HeroSlideshow() {
             onClick={() => setCurrentSlide(index)}
             className={`h-2 sm:h-3 rounded-full transition-all duration-300 ${
               index === currentSlide
-                ? "bg-[#B6B6B4] w-6 sm:w-8"
-                : "bg-[#B6B6B4]/30 hover:bg-[#B6B6B4]/50 w-2 sm:w-3"
+                ? "bg-white w-6 sm:w-8"
+                : "bg-white/40 hover:bg-white/60 w-2 sm:w-3"
             }`}
             aria-label={`View ${products[index].name}`}
           />

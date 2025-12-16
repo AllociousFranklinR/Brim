@@ -19,20 +19,20 @@ export function AboutSection({ onNavigateToContact }: AboutSectionProps) {
   };
 
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-[#000100]">
+    <section id="about" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-[#E3F2FD]">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-[#292929] rounded-lg p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 border border-[#B6B6B4]/20"
+          className="bg-white rounded-lg p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 border border-gray-200 shadow-lg"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#B6B6B4] mb-4 sm:mb-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1E3A8A] mb-4 sm:mb-6 text-center">
             LED Clocks Built to Last
           </h2>
           
-          <p className="text-base sm:text-lg md:text-xl text-[#F5F5F5] mb-8 sm:mb-10 md:mb-12 text-center max-w-3xl mx-auto px-2">
+          <p className="text-base sm:text-lg md:text-xl text-[#546E7A] mb-8 sm:mb-10 md:mb-12 text-center max-w-3xl mx-auto px-2">
             Trusted by banks, offices & corporations nationwide. Get enterprise-grade quality with 7+ years of lifespan.
           </p>
 
@@ -43,11 +43,11 @@ export function AboutSection({ onNavigateToContact }: AboutSectionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="flex flex-col items-center text-center p-4 sm:p-5 md:p-6 bg-[#000100]/50 rounded-lg border border-[#B6B6B4]/10 hover:border-[#B6B6B4]/30 transition-colors"
+              className="flex flex-col items-center text-center p-4 sm:p-5 md:p-6 bg-[#E3F2FD] rounded-lg border border-[#BBDEFB] hover:border-[#2196F3] transition-colors"
             >
-              <Clock className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 text-[#B6B6B4] mb-3 sm:mb-4" />
-              <h3 className="text-xl sm:text-2xl text-[#F5F5F5] mb-1 sm:mb-2">7+ Years</h3>
-              <p className="text-sm sm:text-base text-[#8A8A8A]">of Life</p>
+              <Clock className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 text-[#2196F3] mb-3 sm:mb-4" />
+              <h3 className="text-xl sm:text-2xl text-[#1E3A8A] mb-1 sm:mb-2">7+ Years</h3>
+              <p className="text-sm sm:text-base text-[#546E7A]">of Life</p>
             </motion.div>
 
             <motion.div
@@ -55,11 +55,11 @@ export function AboutSection({ onNavigateToContact }: AboutSectionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="flex flex-col items-center text-center p-4 sm:p-5 md:p-6 bg-[#000100]/50 rounded-lg border border-[#B6B6B4]/10 hover:border-[#B6B6B4]/30 transition-colors"
+              className="flex flex-col items-center text-center p-4 sm:p-5 md:p-6 bg-[#E3F2FD] rounded-lg border border-[#BBDEFB] hover:border-[#2196F3] transition-colors"
             >
-              <MapPin className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 text-[#B6B6B4] mb-3 sm:mb-4" />
-              <h3 className="text-xl sm:text-2xl text-[#F5F5F5] mb-1 sm:mb-2">Made in India</h3>
-              <p className="text-sm sm:text-base text-[#8A8A8A]">Premium Quality</p>
+              <MapPin className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 text-[#2196F3] mb-3 sm:mb-4" />
+              <h3 className="text-xl sm:text-2xl text-[#1E3A8A] mb-1 sm:mb-2">Made in India</h3>
+              <p className="text-sm sm:text-base text-[#546E7A]">Premium Quality</p>
             </motion.div>
 
             <motion.div
@@ -67,11 +67,11 @@ export function AboutSection({ onNavigateToContact }: AboutSectionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="flex flex-col items-center text-center p-4 sm:p-5 md:p-6 bg-[#000100]/50 rounded-lg border border-[#B6B6B4]/10 hover:border-[#B6B6B4]/30 transition-colors sm:col-span-2 md:col-span-1"
+              className="flex flex-col items-center text-center p-4 sm:p-5 md:p-6 bg-[#E3F2FD] rounded-lg border border-[#BBDEFB] hover:border-[#2196F3] transition-colors sm:col-span-2 md:col-span-1"
             >
-              <Award className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 text-[#B6B6B4] mb-3 sm:mb-4" />
-              <h3 className="text-xl sm:text-2xl text-[#F5F5F5] mb-1 sm:mb-2">35+ Years</h3>
-              <p className="text-sm sm:text-base text-[#8A8A8A]">of Trust</p>
+              <Award className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 text-[#2196F3] mb-3 sm:mb-4" />
+              <h3 className="text-xl sm:text-2xl text-[#1E3A8A] mb-1 sm:mb-2">35+ Years</h3>
+              <p className="text-sm sm:text-base text-[#546E7A]">of Trust</p>
             </motion.div>
           </div>
 
@@ -79,16 +79,16 @@ export function AboutSection({ onNavigateToContact }: AboutSectionProps) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8 flex-wrap">
             <a
               href={`tel:${phoneNumber}`}
-              className="flex items-center gap-2 text-sm sm:text-base text-[#F5F5F5] hover:text-[#B6B6B4] transition-colors"
+              className="flex items-center gap-2 text-sm sm:text-base text-[#546E7A] hover:text-[#1E3A8A] transition-colors"
               aria-label="Call Brim Clocks"
             >
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>{phoneNumber}</span>
             </a>
-            <span className="hidden sm:block text-[#8A8A8A]">|</span>
+            <span className="hidden sm:block text-[#546E7A]">|</span>
             <a
               href={`mailto:${email}`}
-              className="flex items-center gap-2 text-sm sm:text-base text-[#F5F5F5] hover:text-[#B6B6B4] transition-colors"
+              className="flex items-center gap-2 text-sm sm:text-base text-[#546E7A] hover:text-[#1E3A8A] transition-colors"
               aria-label="Email Brim Clocks"
             >
               <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -110,7 +110,7 @@ export function AboutSection({ onNavigateToContact }: AboutSectionProps) {
             </button>
             <button
               onClick={handleCall}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#B6B6B4] text-[#000100] rounded-lg hover:bg-[#F5F5F5] transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#2196F3] text-white rounded-lg hover:bg-[#1976D2] transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
               aria-label="Call Brim Clocks"
             >
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -118,7 +118,7 @@ export function AboutSection({ onNavigateToContact }: AboutSectionProps) {
             </button>
             <button
               onClick={onNavigateToContact}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-[#B6B6B4] text-[#B6B6B4] rounded-lg hover:bg-[#B6B6B4] hover:text-[#000100] transition-colors text-sm sm:text-base"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-[#2196F3] text-[#2196F3] rounded-lg hover:bg-[#2196F3] hover:text-white transition-colors text-sm sm:text-base"
               aria-label="Go to Contact Page"
             >
               Contact Us

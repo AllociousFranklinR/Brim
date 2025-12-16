@@ -35,7 +35,7 @@ export function WhatsAppButton() {
       </svg>
 
       {/* Tooltip */}
-      <span className="absolute right-full mr-2 sm:mr-3 top-1/2 -translate-y-1/2 bg-[#000100] text-[#F5F5F5] px-2 py-1.5 sm:px-3 sm:py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none text-xs sm:text-sm">
+      <span className="absolute right-full mr-2 sm:mr-3 top-1/2 -translate-y-1/2 bg-white text-[#1E3A8A] px-2 py-1.5 sm:px-3 sm:py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none text-xs sm:text-sm border border-gray-200 shadow-lg">
         Chat with us on WhatsApp
       </span>
     </motion.button>
