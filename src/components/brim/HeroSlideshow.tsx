@@ -1,21 +1,21 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import miniClockImg from "../../images/mini-clock.png";
+import jumboClockImg from "../../images/jumbo-clock.png";
+import calendarClockImg from "../../images/calendar-clock.png";
 
 const products = [
   {
     name: "Mini LED Clock",
-    image:
-      "https://www.brimclocks.com/images/products/led_clock_product1a.jpeg",
+    image: miniClockImg,
   },
   {
     name: "Jumbo LED Clock",
-    image:
-      "https://www.brimclocks.com/images/products/led_clock_product2a.jpeg",
+    image: jumboClockImg,
   },
   {
     name: "Calendar Clock",
-    image:
-      "https://www.brimclocks.com/images/products/led_clock_product3a.jpeg",
+    image: calendarClockImg,
   },
 ];
 
